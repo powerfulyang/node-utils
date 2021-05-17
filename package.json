@@ -28,9 +28,9 @@
     "test": "jest"
   },
   "devDependencies": {
-    "@powerfulyang/lint": "^0.2.13",
-    "@types/sharp": "^0.28.0",
-    "sharp": "^0.28.1"
+    "@powerfulyang/lint": "^0.2.16",
+    "@types/sharp": "^0.28.1",
+    "sharp": "^0.28.2"
   },
   "dependencies": {
     "@powerfulyang/utils": "^0.7.15",
