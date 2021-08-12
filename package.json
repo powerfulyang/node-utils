@@ -1,6 +1,6 @@
 {
   "name": "@powerfulyang/node-utils",
-  "version": "0.2.13",
+  "version": "0.2.14",
   "description": "common utils",
   "main": "dist/main/index.js",
   "module": "dist/module/index.js",
@@ -28,12 +28,13 @@
     "test": "jest"
   },
   "devDependencies": {
-    "@powerfulyang/lint": "^0.2.16",
+    "@powerfulyang/lint": "^0.2.17",
     "@types/sharp": "^0.28.5",
     "sharp": "^0.28.3"
   },
   "dependencies": {
-    "@powerfulyang/utils": "^0.7.15",
+    "@powerfulyang/utils": "^0.7.16",
     "ip": "^1.1.5"
-  }
+  },
+  "gitHead": "972987c947501d8cc10ac38b6875e565c81f6880"
 }
