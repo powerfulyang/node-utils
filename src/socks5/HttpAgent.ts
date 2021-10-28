@@ -1,5 +1,6 @@
 import { Agent } from 'http';
-import { CreateConnectionOptions, Socks5Client } from './client';
+import type { CreateConnectionOptions } from './client';
+import { Socks5Client } from './client';
 
 export interface OptionInterface {
   type: 'http' | 'https';

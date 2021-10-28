@@ -1,5 +1,5 @@
 import { isIP, isIPv6, Socket } from 'net';
-import { VoidFunction } from '@powerfulyang/utils';
+import type { VoidFunction } from '@powerfulyang/utils';
 import { toBuffer } from 'ip';
 import { EventEmitter } from 'events';
 
@@ -61,9 +61,8 @@ export class Socks5Client extends EventEmitter {
   }
 
   end(data: string | Uint8Array, encoding: (() => void) | undefined) {
-    const ret = this.socket.end(data, encoding);
+    this.socket.end(data, encoding);
     this.writable = this.socket.writable;
-    return ret;
   }
 
   destroySoon() {
@@ -126,7 +125,9 @@ export class Socks5Client extends EventEmitter {
     this.socket.on('end', () => {
       this.emit('end');
     });
+
     // @ts-ignore
+    // eslint-disable-next-line no-underscore-dangle
     this.socket._httpMessage = this._httpMessage;
     // @ts-ignore
     this.socket.parser = this.parser;

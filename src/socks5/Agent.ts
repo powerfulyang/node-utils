@@ -1,4 +1,5 @@
-import { HttpAgent, OptionInterface } from './HttpAgent';
+import type { OptionInterface } from './HttpAgent';
+import { HttpAgent } from './HttpAgent';
 import { HttpsAgent } from './HttpsAgent';
 
 export class AgentFactory {

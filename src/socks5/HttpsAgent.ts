@@ -1,7 +1,8 @@
 import { Agent } from 'https';
 import { connect } from 'tls';
-import { CreateConnectionOptions, Socks5Client } from './client';
-import { AgentOptions } from './HttpAgent';
+import type { CreateConnectionOptions } from './client';
+import { Socks5Client } from './client';
+import type { AgentOptions } from './HttpAgent';
 
 export class HttpsAgent extends Agent {
   private readonly socket;
