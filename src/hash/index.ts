@@ -27,7 +27,7 @@ export const sha512 = (originVal: string | Buffer, salt?: string) => {
 /**
  * generate random string
  */
-export const generateRandomString = (length: number) =>
+export const generateRandomString = (length: number = 10) =>
   crypto
     .randomBytes(Math.ceil(length / 2))
     .toString('hex')

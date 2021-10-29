@@ -3,7 +3,7 @@
     "target": "ESNext",
     "module": "CommonJS",
     "sourceMap": true,
-    "outDir": "./dist/main",
+    "outDir": "./dist",
     "moduleResolution": "node",
     "removeComments": true,
     "noImplicitAny": true,

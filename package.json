@@ -1,10 +1,8 @@
 {
   "name": "@powerfulyang/node-utils",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "common utils",
-  "main": "dist/main/index.js",
-  "module": "dist/module/index.js",
-  "types": "dist/main/index.d.ts",
+  "main": "dist/index.js",
   "sideEffects": false,
   "author": {
     "name": "powerfulyang"
@@ -15,7 +13,8 @@
     "utils"
   ],
   "files": [
-    "dist"
+    "dist",
+    "src"
   ],
   "browserslist": [
     "last 2 versions"
@@ -23,7 +22,6 @@
   "scripts": {
     "build": "rimraf dist && run-p build:*",
     "build:main": "tsc -p tsconfig.json",
-    "build:module": "tsc -p tsconfig.module.json",
     "prettier": "prettier \"src/**/*.ts\" --write",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx --format=pretty ./src --fix",
     "test": "jest"
