@@ -1,6 +1,6 @@
 import { readFileSync } from 'fs';
 import { join } from 'path';
-import { hammingDistance, pHash } from '../../dist/main';
+import { hammingDistance, pHash } from '../../image';
 
 describe('test images phash', () => {
   it('get phash', async () => {
