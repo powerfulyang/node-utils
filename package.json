@@ -1,6 +1,6 @@
 {
   "name": "@powerfulyang/node-utils",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "common utils",
   "main": "dist/index.js",
   "sideEffects": false,
@@ -27,19 +27,19 @@
     "lint:js": "eslint --ext .ts ./src --fix",
     "test": "jest",
     "tsc": "tsc --noEmit",
-    "precommit": "npm run test && npm run lint:js && npm run prettier && npm run tsc",
+    "precommit": "npm run test && lint-staged && npm run tsc",
     "prepare": "husky install",
     "prepublishOnly": "npm run build"
   },
   "devDependencies": {
-    "@powerfulyang/lint": "^0.7.10",
+    "@powerfulyang/lint": "^0.7.13",
     "@types/ip": "^1.1.0",
     "@types/sharp": "^0.29.5",
     "npm-run-all": "^4.1.5",
-    "sharp": "^0.30.1"
+    "sharp": "^0.30.2"
   },
   "peerDependencies": {
-    "sharp": "^0.30.1"
+    "sharp": "^0.30.2"
   },
   "dependencies": {
     "@powerfulyang/utils": "^1.3.10",
