@@ -34,9 +34,9 @@
   "devDependencies": {
     "@powerfulyang/lint": "^0.7.13",
     "@types/ip": "1.1.0",
-    "@types/sharp": "0.29.5",
+    "@types/sharp": "0.30.0",
     "npm-run-all": "4.1.5",
-    "sharp": "0.30.2"
+    "sharp": "0.30.3"
   },
   "peerDependencies": {
     "sharp": "^0.30.2"
