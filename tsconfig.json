@@ -1,11 +1,9 @@
 {
   "compilerOptions": {
     "target": "ESNext",
-    "module": "CommonJS",
+    "module": "ESNext",
     "sourceMap": true,
-    "outDir": "./dist",
     "moduleResolution": "node",
-    "removeComments": true,
     "noImplicitAny": true,
     "strictNullChecks": true,
     "strictFunctionTypes": true,
@@ -20,9 +18,12 @@
     "experimentalDecorators": true,
     "resolveJsonModule": true,
     "baseUrl": ".",
-    "declaration": true,
-    "skipLibCheck": true
+    "declaration": false,
+    "skipLibCheck": true,
+    "paths": {
+      "@/*": ["src/*"]
+    }
   },
-  "exclude": ["node_modules", "./src/**/*.spec.ts"],
-  "include": ["./src/**/*.tsx", "./src/**/*.ts"]
+  "exclude": ["node_modules"],
+  "include": ["./src/**/*.ts"]
 }
