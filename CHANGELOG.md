@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.1.1](https://github.com/powerfulyang/node-utils/compare/v1.1.0...v1.1.1) (2022-04-29)
+
+
+### Bug Fixes
+
+* incorrect package.json fields ([a828eb3](https://github.com/powerfulyang/node-utils/commit/a828eb3f53f59e8b96d227d1d1c714ab2555088b))
+
 ## 1.1.0 (2022-04-29)
 
 
