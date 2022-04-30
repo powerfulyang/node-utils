@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/powerfulyang/node-utils/compare/v1.1.1...v1.2.0) (2022-04-30)
+
+
+### Features
+
+* new version linter ([5302cec](https://github.com/powerfulyang/node-utils/commit/5302cecd1b1ead45b495a43484591ffe59c11cad))
+
 ### [1.1.1](https://github.com/powerfulyang/node-utils/compare/v1.1.0...v1.1.1) (2022-04-29)
 
 
