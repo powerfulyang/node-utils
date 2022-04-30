@@ -48,21 +48,26 @@
     "test": "jest",
     "tsc-check": "tsc --noEmit",
     "precommit": "npm run tsc-check && npm run test && lint-staged",
-    "prepare": "husky install",
+    "postprepare": "husky install && install-peers",
     "prepublishOnly": "npm run build"
   },
   "devDependencies": {
-    "@powerfulyang/lint": "1.4.8",
-    "@powerfulyang/utils": "1.4.1",
+    "@powerfulyang/lint": "1.4.11",
     "@rollup/plugin-node-resolve": "13.2.1",
     "@rollup/plugin-typescript": "8.3.2",
     "@types/sharp": "0.30.2",
-    "rollup": "2.70.2",
-    "sharp": "0.30.4",
     "tsconfig-paths-jest": "0.0.1"
   },
   "peerDependencies": {
-    "@powerfulyang/utils": ">=1.4.0",
-    "sharp": ">=0.30.3"
+    "@powerfulyang/utils": "^1.4.2",
+    "sharp": "^0.30.4"
+  },
+  "peerDependenciesMeta": {
+    "@powerfulyang/utils": {
+      "optional": true
+    },
+    "sharp": {
+      "optional": true
+    }
   }
 }
