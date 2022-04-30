@@ -52,7 +52,7 @@
     "prepublishOnly": "npm run build"
   },
   "devDependencies": {
-    "@powerfulyang/lint": "1.4.11",
+    "@powerfulyang/lint": "1.4.12",
     "@rollup/plugin-node-resolve": "13.2.1",
     "@rollup/plugin-typescript": "8.3.2",
     "@types/sharp": "0.30.2",
