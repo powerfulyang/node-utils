@@ -42,7 +42,7 @@
     "prebuild": "rimraf dist",
     "build": "run-p build:*",
     "build:source": "rollup -c",
-    "build:types": "tsc -p tsconfig.types.json",
+    "build:types": "tsc -p tsconfig.types.json && tsc-alias -p tsconfig.types.json",
     "prettier": "prettier \"src/**/*.ts\" --write",
     "lint:js": "eslint --ext .ts ./src --fix",
     "test": "jest",
@@ -52,22 +52,13 @@
     "prepublishOnly": "npm run build"
   },
   "devDependencies": {
-    "@powerfulyang/lint": "1.4.12",
+    "@powerfulyang/lint": "1.6.1",
     "@rollup/plugin-node-resolve": "13.2.1",
     "@rollup/plugin-typescript": "8.3.2",
-    "@types/sharp": "0.30.2",
-    "tsconfig-paths-jest": "0.0.1"
+    "@types/sharp": "0.30.2"
   },
   "peerDependencies": {
-    "@powerfulyang/utils": "^1.4.2",
+    "@powerfulyang/utils": "^1.4.3",
     "sharp": "^0.30.4"
-  },
-  "peerDependenciesMeta": {
-    "@powerfulyang/utils": {
-      "optional": true
-    },
-    "sharp": {
-      "optional": true
-    }
   }
 }
