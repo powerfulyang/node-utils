@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.2.1](https://github.com/powerfulyang/node-utils/compare/v1.2.0...v1.2.1) (2022-05-01)
+
+
+### Bug Fixes
+
+* declaration paths didn't transform ([91a7c52](https://github.com/powerfulyang/node-utils/commit/91a7c5271226f3869359da20abeb27bcff65d84b))
+
 ## [1.2.0](https://github.com/powerfulyang/node-utils/compare/v1.1.1...v1.2.0) (2022-04-30)
 
 

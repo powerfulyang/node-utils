@@ -1,6 +1,6 @@
 {
   "name": "@powerfulyang/node-utils",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "common utils",
   "main": "dist/cjs/index.cjs",
   "module": "dist/es/index.mjs",
