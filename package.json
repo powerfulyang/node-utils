@@ -48,7 +48,7 @@
     "test": "jest",
     "tsc-check": "tsc --noEmit",
     "precommit": "npm run tsc-check && npm run test && lint-staged",
-    "postprepare": "husky install && install-peers",
+    "postprepare": "husky install",
     "prepublishOnly": "npm run build"
   },
   "devDependencies": {
@@ -58,7 +58,7 @@
     "@types/sharp": "0.30.5"
   },
   "peerDependencies": {
-    "@powerfulyang/utils": "^1.4.4",
-    "sharp": "^0.30.7"
+    "sharp": "^0.30.7",
+    "@powerfulyang/utils": "*"
   }
 }
