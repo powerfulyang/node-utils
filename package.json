@@ -55,7 +55,8 @@
     "@powerfulyang/lint": "2.0.2",
     "@rollup/plugin-node-resolve": "13.3.0",
     "@rollup/plugin-typescript": "8.3.4",
-    "@types/sharp": "0.30.5"
+    "@types/sharp": "0.30.5",
+    "typescript": "latest"
   },
   "peerDependencies": {
     "sharp": "^0.30.7",
