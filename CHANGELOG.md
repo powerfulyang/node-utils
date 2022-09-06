@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.3.0](https://github.com/powerfulyang/node-utils/compare/v1.2.1...v1.3.0) (2022-09-06)
+
+
+### Features
+
+* @powerfulyang/lint@3.1.0 ([e3617ba](https://github.com/powerfulyang/node-utils/commit/e3617bae6c20cbb540825072e294cf2a77014a16))
+* typescript explicitly ([246efc8](https://github.com/powerfulyang/node-utils/commit/246efc83994f4b0d1a20dc9d9833c822d212a0dd))
+
 ### [1.2.1](https://github.com/powerfulyang/node-utils/compare/v1.2.0...v1.2.1) (2022-05-01)
 
 
