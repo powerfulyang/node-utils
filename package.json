@@ -48,7 +48,7 @@
     "test": "jest",
     "tsc-check": "tsc --noEmit",
     "precommit": "npm run tsc-check && npm run test && lint-staged",
-    "postprepare": "husky install",
+    "prepare": "husky install",
     "prepublishOnly": "npm run build"
   },
   "devDependencies": {
