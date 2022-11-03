@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.1](https://github.com/powerfulyang/node-utils/compare/v1.3.0...v1.3.1) (2022-11-03)
+
+
+### Bug Fixes
+
+* hamming distance ([5bee1a6](https://github.com/powerfulyang/node-utils/commit/5bee1a6319e0d08ad83bfa380490eae5b5313504))
+
 ## [1.3.0](https://github.com/powerfulyang/node-utils/compare/v1.2.1...v1.3.0) (2022-09-06)
 
 
