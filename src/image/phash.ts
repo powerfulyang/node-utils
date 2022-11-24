@@ -94,10 +94,9 @@ export const bitCount = (n: number) => {
   let tmp = n;
 
   while (tmp) {
+    result += 1;
     // eslint-disable-next-line no-bitwise
-    result += tmp & 1;
-    // eslint-disable-next-line no-bitwise
-    tmp >>>= 1;
+    tmp &= tmp - 1;
   }
 
   return result;
