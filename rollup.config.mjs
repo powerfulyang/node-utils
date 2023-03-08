@@ -1,6 +1,6 @@
 import typescript from '@rollup/plugin-typescript';
 import resolve from '@rollup/plugin-node-resolve';
-import pkg from './package.json' assert { type: 'json' };
+import pkg from './package.json' assert {type: 'json'};
 
 const pkgDeps = Array.from(Object.keys({ ...pkg.dependencies, ...pkg.peerDependencies }));
 
@@ -24,6 +24,9 @@ export default {
       dir: 'dist/es',
     },
   ],
-  plugins: [typescript(), resolve()],
+  plugins: [
+    typescript(),
+    resolve(),
+  ],
   external: [...pkgDeps],
 };
