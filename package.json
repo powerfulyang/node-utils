@@ -53,7 +53,7 @@
   },
   "devDependencies": {
     "@powerfulyang/lint": "latest",
-    "@rollup/plugin-node-resolve": "15.0.1",
+    "@rollup/plugin-node-resolve": "15.0.2",
     "@rollup/plugin-typescript": "10.0.1",
     "@types/sharp": "latest",
     "typescript": "latest"
