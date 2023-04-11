@@ -59,7 +59,7 @@
     "typescript": "latest"
   },
   "peerDependencies": {
-    "sharp": "*",
-    "@powerfulyang/utils": "*"
+    "sharp": "~0.31.3",
+    "@powerfulyang/utils": "^1.9.2"
   }
 }
