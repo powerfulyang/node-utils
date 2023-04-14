@@ -9,7 +9,16 @@ const moduleNameMapper = pathsToModuleNameMapper(tsconfig.compilerOptions.paths,
 module.exports = {
   moduleNameMapper,
   transform: {
-    '^.+\\.(ts|tsx)$': '@swc/jest',
+    '^.+\\.(t|j)sx?$': '@swc/jest',
   },
   setupFilesAfterEnv: ['<rootDir>/.jest/jest.setup.js'],
+  reporters: process.env.CI && [
+    [
+      'github-actions',
+      {
+        silent: false,
+      },
+    ],
+    'summary',
+  ],
 };

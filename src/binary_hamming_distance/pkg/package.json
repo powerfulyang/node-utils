@@ -1,0 +1,11 @@
+{
+  "name": "binary_hamming_distance",
+  "version": "0.1.0",
+  "files": [
+    "binary_hamming_distance_bg.wasm",
+    "binary_hamming_distance.js",
+    "binary_hamming_distance.d.ts"
+  ],
+  "main": "binary_hamming_distance.js",
+  "types": "binary_hamming_distance.d.ts"
+}

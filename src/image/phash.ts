@@ -1,4 +1,3 @@
-/* eslint-disable no-bitwise */
 import sharp from 'sharp';
 
 const SAMPLE_SIZE = 32;
@@ -89,70 +88,3 @@ export async function pHash(image: Buffer) {
 
   return fingerprint;
 }
-
-export const bitCount = (n: number) => {
-  let result = 0;
-  let tmp = n;
-
-  while (tmp) {
-    result += 1;
-    tmp &= tmp - 1;
-  }
-
-  return result;
-};
-
-export const bigIntBitCount = (n: bigint) => {
-  let result = 0;
-  let tmp = n;
-
-  while (tmp) {
-    result += 1;
-    tmp &= tmp - 1n;
-  }
-
-  return result;
-};
-
-/**
- * Hamming distance between two strings or numbers
- * @param a - first string or number e.g. '123456'
- * @param b - second string or number e.g. '654321'
- */
-export const decimalHammingDistance = (a: string | number, b: string | number) => {
-  const res = BigInt(a) ^ BigInt(b);
-  return bigIntBitCount(res);
-};
-
-/**
- * Hamming distance between two binary strings
- * @param a - first string e.g. '101010'
- * @param b - second string e.g. '010101'
- */
-export const binaryHammingDistance = (a: string, b: string) => {
-  if (/^[01]+$/.test(a) && /^[01]+$/.test(b)) {
-    const max = Math.max(a.length, b.length);
-    let distance = 0;
-    const aPadded = a.padStart(max, '0');
-    const bPadded = b.padStart(max, '0');
-    for (let i = 0; i < max; i++) {
-      if (aPadded[i] !== bPadded[i]) {
-        distance += 1;
-      }
-    }
-    return distance;
-  }
-  throw new Error('Invalid binary string');
-};
-
-/**
- * Hamming distance between two binary strings
- * @param a - first string e.g. '101010'
- * @param b - second string e.g. '010101'
- */
-export const binaryStringHammingDistance = (a: string, b: string) => {
-  const _a = BigInt(`0b${a}`);
-  const _b = BigInt(`0b${b}`);
-  const res = _a ^ _b;
-  return bigIntBitCount(res);
-};
