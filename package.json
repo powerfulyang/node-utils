@@ -35,9 +35,6 @@
     "dist",
     "src"
   ],
-  "browserslist": [
-    "last 2 versions"
-  ],
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "run-p build:*",
