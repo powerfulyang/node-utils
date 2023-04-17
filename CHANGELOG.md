@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.0](https://github.com/powerfulyang/node-utils/compare/v1.3.1...v1.4.0) (2023-04-17)
+
+
+### Features
+
+* wasm ([86da8ca](https://github.com/powerfulyang/node-utils/commit/86da8ca468702b169e2ac9355a966036f7156587))
+
 ## [1.3.1](https://github.com/powerfulyang/node-utils/compare/v1.3.0...v1.3.1) (2022-11-03)
 
 
