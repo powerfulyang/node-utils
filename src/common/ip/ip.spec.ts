@@ -1,4 +1,5 @@
-import { long2ip, ip2long } from './ipv4';
+import { describe, expect, it } from '@jest/globals';
+import { ip2long, long2ip } from './ipv4';
 
 describe('ip convert test', () => {
   it('ip地址转long', () => {

@@ -1,3 +1,4 @@
+import { describe, expect, it } from '@jest/globals';
 import { generateRandomString, sha1 } from './index';
 
 describe('hash test', () => {

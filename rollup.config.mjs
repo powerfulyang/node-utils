@@ -1,10 +1,13 @@
 import typescript from '@rollup/plugin-typescript';
 import resolve from '@rollup/plugin-node-resolve';
-import pkg from './package.json' assert { type: 'json' };
 import commonjs from '@rollup/plugin-commonjs';
 import alias from '@rollup/plugin-alias';
 import wasm from '@rollup/plugin-wasm';
 import replace from '@rollup/plugin-replace';
+import { readFileSync } from 'node:fs';
+
+const str = readFileSync('./package.json', 'utf-8');
+const pkg = JSON.parse(str);
 
 const pkgDeps = Array.from(Object.keys({ ...pkg.dependencies, ...pkg.peerDependencies }));
 

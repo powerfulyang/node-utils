@@ -1,8 +1,8 @@
 import type { Assets } from '@/image';
 import { calculateHammingDistances } from '@/image';
 
-const asyncCalculateHammingDistances = (assets: Assets) => {
+const _asyncCalculateHammingDistances = (assets: Assets) => {
   return calculateHammingDistances(assets);
 };
 
-export default asyncCalculateHammingDistances;
+export default _asyncCalculateHammingDistances;

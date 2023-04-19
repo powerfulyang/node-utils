@@ -4,18 +4,19 @@ import {
   binaryStringHammingDistance,
   wasmBinaryStringHammingDistance,
 } from '@/image/hammingDistance';
-import fs, { readFileSync } from 'fs';
+import { readFileSync } from 'node:fs';
 import { calculate_hamming_distances } from '@/binary_hamming_distance/pkg';
 import { pHash } from '@/image/phash';
 import type { Assets } from '@/image';
 import { csvPath, test_img_1, test_img_2 } from '@test/index';
+import { beforeAll, describe, expect, it } from '@jest/globals';
 
 describe('test images phash', () => {
   let images: string[] = [];
   let assets: Assets = [];
 
   beforeAll(() => {
-    const data = fs.readFileSync(csvPath, 'utf8');
+    const data = readFileSync(csvPath, 'utf8');
     const lines = data.split(/[\r\n]/);
     images = lines.filter((line) => line);
     assets = images.map((image, index) => {

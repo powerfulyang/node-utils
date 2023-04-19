@@ -1,4 +1,4 @@
-import { join } from 'path';
+import { join } from 'node:path';
 
 export const csvPath = join(__dirname, 'test_public_asset.csv');
 
