@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.0](https://github.com/powerfulyang/node-utils/compare/v1.4.0...v1.5.0) (2023-04-19)
+
+
+### Features
+
+* expose threadPool ([9c1f0ca](https://github.com/powerfulyang/node-utils/commit/9c1f0caee89162bd14068ed62f6d3e3be95e468f))
+
 ## [1.4.0](https://github.com/powerfulyang/node-utils/compare/v1.3.1...v1.4.0) (2023-04-17)
 
 

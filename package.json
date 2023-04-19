@@ -1,6 +1,6 @@
 {
   "name": "@powerfulyang/node-utils",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "common utils",
   "main": "dist/index.cjs",
   "types": "dist/index.d.ts",
