@@ -62,7 +62,7 @@
     "@rollup/plugin-wasm": "6.1.2",
     "@types/node": "18.15.13",
     "@types/sharp": "0.31.1",
-    "sharp": "0.31.3",
+    "sharp": "0.32.1",
     "typescript": "5.0.4",
     "zx": "7.2.1"
   },
