@@ -48,12 +48,12 @@
     "wasm:build": "zx ./src/binary_hamming_distance/build.mjs"
   },
   "dependencies": {
-    "@powerfulyang/utils": "1.10.0",
+    "@powerfulyang/utils": "1.11.2",
     "piscina": "3.2.0"
   },
   "devDependencies": {
     "@jest/globals": "29.5.0",
-    "@powerfulyang/lint": "3.2.1",
+    "@powerfulyang/lint": "3.3.0",
     "@rollup/plugin-alias": "5.0.0",
     "@rollup/plugin-commonjs": "24.1.0",
     "@rollup/plugin-node-resolve": "15.0.2",
