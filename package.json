@@ -60,7 +60,7 @@
     "@rollup/plugin-replace": "5.0.2",
     "@rollup/plugin-typescript": "11.1.0",
     "@rollup/plugin-wasm": "6.1.2",
-    "@types/node": "18.15.13",
+    "@types/node": "18.16.18",
     "@types/sharp": "0.31.1",
     "sharp": "0.31.3",
     "typescript": "5.0.4",
