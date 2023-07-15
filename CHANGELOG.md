@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.0](https://github.com/powerfulyang/node-utils/compare/v1.5.0...v1.6.0) (2023-07-15)
+
+
+### Features
+
+* threads ([0f914f3](https://github.com/powerfulyang/node-utils/commit/0f914f380137d5461f7ca4b197d727b0ff487e8b))
+
 ## [1.5.0](https://github.com/powerfulyang/node-utils/compare/v1.4.0...v1.5.0) (2023-04-19)
 
 
